@@ -66,8 +66,7 @@ Here is a description of the different game states:
 ![Start screen and difficulty](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/c1d46b53-43ad-48dd-a199-09237f53b124)
 > **_NOTE:_** If no level is selected the default level is selected: **Medium**.\
 
-2. After choosing the difficulty level, the game will request a word from the server. Under normal circumstances this process is really fast. However, if it takes longer, a message will appear indicating was is currently happening.\
-![Request message]() 
+2. After choosing the difficulty level, the game will request a word from the server. Under normal circumstances this process is really fast. However, if it takes longer, a message will appear indicating was is currently happening.
 
 3. Now the game is ready. We see the hangman to the left, the entry box and word are in the center and the letters on the right.
    - The different parts of the hangman are going to change color depending on the number of errors that are made.\
