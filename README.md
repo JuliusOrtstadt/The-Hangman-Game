@@ -62,9 +62,9 @@ Now the game can start.
 Since everything is up and running, let's play a game of Hangman !
 
 Here is a description of the different game states:
-1. When the start screens pops-up, a difficulty level needs to be selected. \
+1. When the start screens pops-up, a difficulty level needs to be selected.\
 ![Start screen and difficulty](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/c1d46b53-43ad-48dd-a199-09237f53b124)
-> **_NOTE:_** If no level is selected the default level is selected: **Medium**.\
+> **_NOTE:_** If no level is selected the default level is selected: **Medium**.
 
 2. After choosing the difficulty level, the game will request a word from the server. Under normal circumstances this process is really fast. However, if it takes longer, a message will appear indicating was is currently happening.
 
