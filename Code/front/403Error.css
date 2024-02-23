@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'error';
+    src: url('./404Font/404Error-nRZLY.ttf');
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0; 
+    height: 100vh;
+    background-color: rgb(231, 227, 227);
+    color: rgb(57, 128, 153);
+}
+
+
+p{
+    font-size: 30px;
+}
+
+p:last-child{
+    font-family: 'error';
+    font-size: 150px;
+}

@@ -1,0 +1,88 @@
+<!-- Julius ORTSTADT G4 Peip2 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hangman Game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="data:,"> <!-- Remove favicon.ico request from server by setting it to an empty url string -->
+    </head>
+
+    <body>
+        <h1 id="gameTitle">Hangman Game</h1>
+        <div id="startElements">
+            <button id="playButton">Play !</button>
+        
+            <select>
+                <option value="medium">--- Please select difficulty ---</option>
+                <option value="easy">-- Easy --</option>
+                <option value="medium">-- Medium --</option>
+                <option value="hard">-- Hard --</option>
+            </select>
+
+            <p class="notDisplayed" id="statusMsg"></p>
+            <p id="rules">Rules:<br>Guess the word without loosing<br>Level easy: 4-5 letters<br>Level medium: 6-8 letters<br>Level hard: 8-12 letters</p>
+        </div>        
+        
+        <div class="notDisplayed" id="hangman">
+            <svg>
+                <line x1="10%" y1="90%" x2="80%" y2="90%"></line>
+                <line x1="20%" y1="89.2%" x2="20%" y2="10.8%"></line>
+                <line x1="19%" y1="10%" x2="71%" y2="10%"></line>
+                <line x1="20%" y1="20%" x2="30%" y2="10%"></line>
+                <line x1="70%" y1="10.8%" x2="70%" y2="24%"></line>
+                <circle cx="70%" cy="28%" r="4%"></circle>
+                <line x1="70%" y1="32%" x2="70%" y2="50%"></line>               
+                <line x1="63%" y1="57%" x2="70%" y2="50%"></line>
+                <line x1="77%" y1="57%" x2="70%" y2="50%"></line>
+                <line x1="63%" y1="44%" x2="70%" y2="37%"></line>
+                <line x1="77%" y1="44%" x2="70%" y2="37%"></line>
+            </svg>
+        </div>
+
+        
+        <div class="notDisplayed" id="guess">
+            <p id="word"></p>
+            <p id="gameMsg"></p>
+
+            <input type="text" placeholder="Enter letter" maxlength="1">
+                
+            <button id="submitButton">Submit</button>
+            <button id="playAgain">Play again !</button>
+        </div>
+
+        <div class="notDisplayed" id="letters">
+            <h2>Letters</h2>
+            <div id="A">A</div>
+            <div id="B">B</div>
+            <div id="C">C</div>
+            <div id="D">D</div>
+            <div id="E">E</div>
+            <div id="F">F</div>
+            <div id="G">G</div>
+            <div id="H">H</div>
+            <div id="I">I</div>
+            <div id="J">J</div>
+            <div id="K">K</div>
+            <div id="L">L</div>
+            <div id="M">M</div>
+            <div id="N">N</div>
+            <div id="O">O</div>
+            <div id="P">P</div>
+            <div id="Q">Q</div>
+            <div id="R">R</div>
+            <div id="S">S</div>
+            <div id="T">T</div>
+            <div id="U">U</div>
+            <div id="V">V</div>
+            <div id="W">W</div>
+            <div id="X">X</div>
+            <div id="Y">Y</div>
+            <div id="Z">Z</div>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
+
+</html>

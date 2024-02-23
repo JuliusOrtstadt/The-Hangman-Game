@@ -1,0 +1,196 @@
+/*--- Julius Ortstadt G4 Peip2 ---*/
+
+/*--- Creation of new font family ---*/
+@font-face{
+    font-family: 'dustyRanch';
+    src: url('./dusty_ranch/dusty_ranch.ttf');
+}
+
+@font-face {
+    font-family: 'error';
+    src: url('./404Font/404Error-nRZLY.ttf');
+}
+
+html, body {
+    background-image: url('./Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; 
+    height: 100vh;
+}
+
+
+*{
+    font-family:'dustyRanch' ;
+}
+
+
+/*--- Grid ---*/
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 35vw 1fr 35vw;
+}
+
+/*--- Title ---*/
+h1 {
+    grid-row: 1;    
+    grid-column: 1 / 4;
+    text-align: center;
+    size: 30px;
+    color: #0597F2; 
+}
+
+/*--- Start screen ---*/
+#startElements{
+    grid-row: 2;
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*--- Select box ---*/
+select{
+    background-color: #008CBA;
+    padding: 20px 37px;
+    font-size: 15px;
+    text-align-last: center;
+}
+
+/*--- Play button ---*/
+#playButton {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px 37px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+#playButton:hover {
+    background-color: #008bbab5
+}
+
+#playButton:active {
+  background-color: #008bba6b;
+  box-shadow: 0 5px #008bba4f;
+  transform: translateY(4px);
+}
+
+/*--- Status message ---*/
+#statusMsg{
+    font-family: 'error' !important;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*--- Rules ---*/
+#rules{
+    font-family: 'error' !important;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*--- Hidden elements ---*/
+.notDisplayed {
+    display: none !important;
+}
+
+
+/*--- Hangman ---*/
+#hangman {
+    text-align: center;
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hangman>svg{
+    width: 95%;
+    height: 95%;
+    transform-origin: center center;
+}
+
+#hangman>svg line{
+    stroke-linecap: round;
+    stroke-width:10px;
+}
+
+
+/*--- Input / Guess ---*/
+#guess {
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#guess>p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#guess>input{
+    padding: 12px 20px;
+    margin: 8px 0;  
+}
+
+::placeholder{
+    font-family: 'dustyRanch';
+}
+
+#guess>button{
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 25px 42px;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#guess>button:hover {
+    background-color: #e44e1cb5;
+}
+
+#guess>button:active {
+  background-color: #e44e1cb5;
+  transform: translateY(4px);
+}
+
+
+/*--- Letters ---*/
+#letters {
+    grid-row: 2;
+    grid-column: 3;
+
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#letters>h2{
+    grid-row: 1;
+    grid-column: 1 / 6;
+    text-align: center;
+}
+
+#letters div{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
