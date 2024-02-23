@@ -63,7 +63,7 @@ Since everything is up and running, let's play a game of Hangman !
 
 Here is a description of the different game states:
 1. When the start screens pops-up, a difficulty level needs to be selected. \
-![Start screen and difficulty]()
+![Start screen and difficulty](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/c1d46b53-43ad-48dd-a199-09237f53b124)
 > **_NOTE:_** If no level is selected the game will ask the server for a word indefinitely. If this happens, close the game and restart the server.\
 
 2. After choosing the difficulty level, the game will request a word from the server. Under normal circumstances this process is really fast. However, if it takes longer, a message will appear indicating was is currently happening.\
@@ -71,22 +71,23 @@ Here is a description of the different game states:
 
 3. Now the game is ready. We see the hangman to the left, the entry box and word are in the center and the letters on the right.
    - The different parts of the hangman are going to change color depending on the number of errors that are made.\
-   ![Hangman colorized]()
+   ![Hangman colorized](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/ebab7d1e-3fd0-4ae1-9a34-16c30228c92b)
    - Letters can be entered in lower or uppercase. They need to be letters from the latin alphabet otherwise an error message will show up. To submit, either press **Enter** or press the **Submit** button.\
-   ![Error no valid letter]()
+   ![Error no valid letter](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/a7145222-ed8f-491d-bcf7-32418e03ba63)
    - The player can't play the same letter more than once.\
-   ![Already tried letter]()
+   ![Already tried letter](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/3e302939-e5e8-484c-a4e1-401981bfec6a)
    - The submission box is limited to one character at a time, meaning it is impossible to enter more than one character into the box.
    - The letters on the right show which letter has already been tried. 
       - If the letter is **<span style="color: beige"> white </span>** it hasn't been tried yet. 
       - If the letter is **<span style="color: #eb2d3a"> red </span>** it has been tried but was not in the word.
       - If the letter is **<span style="color: #90ee90"> green </span>** it has been tried and is in the word and is therefore displayed there where the word is.\
-      ![Colorized letters]()
+      ![Colorized letters](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/4c756b06-72bd-4ff3-a77f-4730dbb957a6)
 4. Play by entering letters and trying to guess the word. The player has 10 tries to complete the Hangman. 
    - If the word isn't found before the end, the player loses and the word is revealed and the player and start a new game.\
-   ![Lost game]()
+   ![Lost game](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/4ee0a7b2-e93e-44bb-b8fd-85f275d52b30)
+
    - If the word is guessed before the end, the player wins and can start a new game.\
-   ![Victory]()
+   ![Victory](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/90df5264-a609-42c5-99f4-b5edb97ae82e)
 
 These are all the steps to play the game ! Enjoy :)
 
@@ -95,12 +96,12 @@ These are all the steps to play the game ! Enjoy :)
 **1/ Security**\
 Different security measures are included in the code so that the player can not cheat.
 1. If the player tries to access other parts of the site via the URL to which access is forbidden, a 403 Error message site will appear. This blocks any attempt at cheating.\
-![403]()
+![403](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/16ff64f9-0e40-4321-a2fb-3dfebeea65b1)
 2. All the logic is on the server side. This means that the front website, which the player can see, has no information about the played word besides the number of letters. This blocks any attempt by the player to try to look in the source code of the site by using the inspection tool.
 
 **2/ Page not found**\
 If the player enters a different URL at the start of the game, or during the game and the page can't be found, a 404 Error message will appear indicating that something went wrong.\
-![404]()
+![404](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/c7f14980-883d-4f48-ace2-8dec9e801865)
 
 
 ### Conclusion
