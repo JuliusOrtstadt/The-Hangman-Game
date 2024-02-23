@@ -77,7 +77,7 @@ Here is a description of the different game states:
    ![Already tried letter](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/3e302939-e5e8-484c-a4e1-401981bfec6a)
    - The submission box is limited to one character at a time, meaning it is impossible to enter more than one character into the box.
    - The letters on the right show which letter has already been tried. 
-      - If the letter is **<span style="color: beige"> white </span>** it hasn't been tried yet. 
+      - If the letter is **<span style="color: #c8ad7f"> white </span>** it hasn't been tried yet. 
       - If the letter is **<span style="color: #eb2d3a"> red </span>** it has been tried but was not in the word.
       - If the letter is **<span style="color: #90ee90"> green </span>** it has been tried and is in the word and is therefore displayed there where the word is.\
       ![Colorized letters](https://github.com/JuliusOrtstadt/The-Hangman-Game/assets/120115242/4c756b06-72bd-4ff3-a77f-4730dbb957a6)
